@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>TAG CCS</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="description" content="CCS By TAG Club">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Registration form for CCS</title>
+
+  <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"> </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.96.1/css/materialize.min.css">
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.96.1/js/materialize.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Reem+Kufi' rel='stylesheet' type='text/css'>
+
+    <script>
+  $(document).ready(function() {
+    // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
+    $('.modal-trigger').leanModal();
+  });
+  </script>
+  <script>
+Materialize.toast('Registered successfully!', 4000, 'rounded') // 4000 is the duration of the toast
+  </script>
+  <style type="text/css">
+  html,
+  body {
+      height: 100%;
+  }
+  html {
+      display: table;
+      margin: auto;
+  }
+  body {
+      display: table-cell;
+      vertical-align: middle;
+  }
+  .margin {
+    margin: 0 !important;
+  }
+  </style>
+</head>
+
+<body style="background-image: url('img/1.jpg'); font-family: Reem Kufi">
+      <div class="row" style="width: 80%; height: 80%">
+        <div class="col s12">
+          <div class="card white">
+            <div class="card-content black-text">
+              <span class="card-title" style="color: black; text-align: center"><b><h2>Join Us!</h2></b></span>
+              <br>
+              <div class="row">
+                <div class="col s6">
+                  <img src="img/logo.png" style="width: 90%; height: 70%">
+                </div>
+                <div class="col s6">
+                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+
+                </div>
+            </div>
+            <center>
+            <div class="card-action">
+              <a class="waves-effect waves-light btn modal-trigger" href="#modal1" style="color: black; background-color: #FD9300">Get Started</a>
+            </div>
+          </center>
+        </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Structure -->
+      <div id="modal1" class="modal modal-fixed-footer">
+        <div class="modal-content center-align">
+          <center><h4>Register here!</h4></center>
+          <br>
+          <form class="login-form">
+        <div class="row margin">
+          <div class="input-field col s9 offset-s1">
+            <i class="material-icons prefix">perm_identity</i>
+            <input id="username" type="text" class="validate">
+            <label for="username" class="center-align">Username</label>
+          </div>
+        </div>
+        <div class="row margin">
+          <div class="input-field col s9 offset-s1">
+            <i class="material-icons prefix">lock_outline</i>
+            <input id="regno" type="text" class="validate">
+            <label for="regno" class="center-align">Registration Number</label>
+          </div>
+        </div>
+        <div class="row margin">
+          <div class="input-field col s9 offset-s1">
+            <i class="material-icons prefix">phone</i>
+            <input id="pno" type="number" class="validate">
+            <label for="pno" class="center-align">Phone number</label>
+          </div>
+        </div>
+      </form>
+        </div>
+        <center>
+        <div class="modal-footer">
+          <a href="#!" class="modal-action modal-close waves-effect btn-flat" onclick="Materialize.toast('Registered successfully!', 4000, 'rounded')" style="color: black; background-color: #FD9300">Register</a>
+        </div>
+        </center>
+      </div>
+
+      </script>
+</body>
+</html>
